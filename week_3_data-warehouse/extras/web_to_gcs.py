@@ -12,7 +12,7 @@ Pre-reqs:
 """
 
 # services = ['fhv','green','yellow']
-init_url = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/'
+init_url = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/'
 # switch out the bucketname
 BUCKET = os.environ.get("GCP_GCS_BUCKET", "dtc-data-lake-bucketname")
 
@@ -47,6 +47,7 @@ def web_to_gcs(year, service):
         r = requests.get(request_url)
         open(file_name, 'wb').write(r.content)
         print(f"Local: {file_name}")
+        
 
         # read it back into a parquet file
         df = pd.read_csv(file_name, compression='gzip')
