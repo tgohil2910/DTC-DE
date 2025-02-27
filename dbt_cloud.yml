@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "pd322.us1.dbt.com"
+  active-project: "70471823438592"
+projects:
+  - project-name: "taxi_rides_ny"
+    project-id: "70471823438592"
+    account-name: "Sarvajanik College of Engineering and Technology"
+    account-id: "70471823434027"
+    account-host: "pd322.us1.dbt.com"
+    token-name: "cloud-cli-2dc0"
+    token-value: "dbtu_xgYjenYgX5k__KKzMMQFr2XoO4ykqE03F4lMZUlTMiB7Qg1g_c"
+
+
